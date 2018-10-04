@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ajax-Site</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+	<link href="style.css" rel="stylesheet"/>
+</head>
+<nav>
+	<div class="nav-wrapper grey">
+	<a href="#" class="brand-logo">Name of Company</a>
+		<ul id="nav-mobile" class="right hide-on-med-and-down">
+			<li><a href="more.html">More</a> </li>
+		</ul>
+	</div>
+</nav>
+<body>
+	<div class="z-depth-5" id="div_suit1">
+		<img id="img_suit1" width="1000px" src="suits1.png">
+	</div>
+	<div class="z-depth-5" id="div_suit2">
+		<img id="img_suit2" width="1000px" src="suits2.png">
+	</div>
+	<div class="z-depth-5" id="div_suit3">
+		<img id="img_suit3" width="1000px" src="suits3.png">
+	</div>
+	<div class="z-depth-5" id="div_info">
+		<div id="main_info_view">
+			<div id="sub_view">
+				<h1 id="main_quote">Main Quote</h1>
+				<p id="para1">First Para:Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function(){
+			$('#div_suit1').on('mouseenter', function(){
+				$('#div_suit2').animate({
+					left: 1000
+				});
+				$('#div_suit3').animate({
+					left: 1000
+				});
+				$('#div_info').animate({
+					left: 1000
+				});
+			});
+			$('#div_suit1').on('mouseleave', function(){
+				$('#div_suit2').animate({
+					left: 145
+				});
+				$('#div_suit3').animate({
+					left: 280
+				});
+				$('#div_info').animate({
+					left: 525
+				});
+			});
+			$('#div_suit2').on('mouseenter', function(){
+				$('#div_suit2').animate({
+					left: 0
+				});
+				$('#div_suit1').animate({
+					left: 1000
+				});
+				$('#div_suit3').animate({
+					left: 1000
+				});
+				$('#div_info').animate({
+					left: 1000
+				});
+			});
+			$('#div_suit2').on('mouseleave', function(){
+				$('#div_suit2').animate({
+					left: 145
+				});
+				$('#div_suit1').animate({
+					left: 0
+				});
+				$('#div_suit3').animate({
+					left: 280
+				});
+				$('#div_info').animate({
+					left: 525
+				});
+			});
+			$('#div_suit3').on('mouseenter', function(){
+				$('#div_suit3').animate({
+					left: 0
+				});
+				$('#div_suit1').animate({
+					left: 1000
+				});
+				$('#div_suit2').animate({
+					left: 1000
+				});
+				$('#div_info').animate({
+					left: 1000
+				});
+			});
+			$('#div_suit3').on('mouseleave', function(){
+				$('#div_suit3').animate({
+					left: 280
+				});
+				$('#div_suit1').animate({
+					left: 0
+				});
+				$('#div_suit2').animate({
+					left: 145
+				});
+				$('#div_info').animate({
+					left: 525
+				});
+			});
+			// $('#img_suit1').on('mouseenter', function(){
+			// 	$('#div_suit3').css('z-index','5');
+			// });
+			// $('#img_suit1').on('mouseleave', function(){
+			// 	$('#div_suit3').css('z-index','3');
+			// });
+
+		});
+	</script>
+
+
+</body>
+</html>

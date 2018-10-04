@@ -1,0 +1,43 @@
+body{
+	background-color: #424242;
+	width: 1349px;
+}
+#div_suit1{
+	position:absolute;
+	top : 65px;
+	left: 5px;
+	/*z-index: 5;*/
+}
+#div_suit2{
+	position:absolute;
+	top : 65px;
+	left: 145px;
+	/*z-index: 4;*/
+}
+#div_suit3{
+	position:absolute;
+	top : 65px;
+	left: 280px;
+}
+#div_info{
+	position:absolute;
+	top : 65px;
+	left: 525px;
+	height: 560px;
+	z-index: 4;
+	background-color: #bdbdbd ;
+	width: 830px;
+	opacity: 0.6;
+}
+#sub_view{
+	padding-left: 50px;
+	padding-right: 30px;
+	text-align: justify;
+	
+
+}
+#para1{
+	padding-top: 50px;
+	/*font-weight: bold;*/
+
+}
